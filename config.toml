@@ -1,7 +1,7 @@
 [settings]
 midi-device-id = 3
-adaptive-volume = false
-volume = 50 # in percent
+adaptive-volume = true
+volume = 35 # in percent
 
 [sounds]
 48 = "00A  - Générique.mp3"

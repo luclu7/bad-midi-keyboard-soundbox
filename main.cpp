@@ -103,9 +103,7 @@ int main(int argc, char *argv[])
             if(status == 0b11100000 && data1 != 64) {
                 if(data1 >= 127/2) {
                     std::cout << "Reset" << std::endl;
-                    //ma_engine_stop(&engine);
-                    engine.pInlinedSoundHead = NULL;
-                    
+                    ma_engine_stop(&engine); 
                 } else {
                     std::cout << "Go" << std::endl;
                     ma_engine_start(&engine);
@@ -118,7 +116,7 @@ int main(int argc, char *argv[])
             if(keyDown) {
                 play_sound_by_key_id(&engine, config, data1, adaptiveVolume ? data2 : 127);
                 std::cout << "Currently playing sounds: " << (engine.pInlinedSoundHead != NULL ? "Oui" : "Non") << std::endl;
-                if(engine.pInlinedSoundHead != NULL) {
+                /* if(engine.pInlinedSoundHead != NULL) {
                     std::cout << "owns data source: " << (engine.pInlinedSoundHead->sound.ownsDataSource ? "Oui" : "Non") << std::endl;
                     std::cout << "next: " << (engine.pInlinedSoundHead->pNext != NULL ? "Oui" : "Non") << std::endl;
                     if(engine.pInlinedSoundHead->pNext != NULL)
@@ -126,7 +124,7 @@ int main(int argc, char *argv[])
                         
                     std::cout << "prev: " << (engine.pInlinedSoundHead->pPrev != NULL ? "Oui" : "Non") << std::endl;
 
-                }
+                } */
             }
         }
     }
