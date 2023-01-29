@@ -1,21 +1,8 @@
 [settings]
-midi-device-id = 3
-adaptive-volume = true
-volume = 35 # in percent
+midi-device-id = 3 # change it to the id of your midi keyboard
+adaptive-volume = true # if true, the volume will be adjusted to the velocity of the note
+volume = 50 # in percent
 
 [sounds]
-48 = "00A  - Générique.mp3"
-50 = "00C - Question de rapidité - Annonce.mp3"
-52 = "00DA - Présentation des candidats.mp3"
-53 = "99B - Alerte de fin.mp3"
-55 = "99C - Générique de fin.mp3"
-57 = "Joker - 5050.mp3"
-59 = "Joker - Vote du public - TIN.mp3"
-60 = "Pub - Début.mp3"
-62 = "Pub - Fin.mp3"
-64 = "01 - 200 € 800 € - Gagné.mp3"
-65 = "00B - Installation.mp3"
-67 = "-1"
-# 69
-# 71
-# 72
+48 = "file1.mp3"
+50 = "file2.mp3"
